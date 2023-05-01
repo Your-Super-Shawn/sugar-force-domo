@@ -1,0 +1,15 @@
+{
+  "name": "sugar-force-domo",
+  "version": "0.1.0",
+  "size": {
+    "width": 5,
+    "height": 3
+  },
+  "mapping": [
+    {
+      "dataSetId": "344e386d-2b28-4a30-ae7e-5fbfb0ccddad",
+      "alias": "leads",
+      "fields": []
+    }
+  ]
+}
