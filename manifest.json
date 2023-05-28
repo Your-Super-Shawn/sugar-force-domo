@@ -1,10 +1,27 @@
 {
   "name": "sugar-force-domo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "size": {
     "width": 5,
     "height": 3
   },
+  "fileName": "manifest.json",
+  "id": "afbb2cf0-a8a5-46cd-b998-35896d3e78ac",
+  "proxyId": "efaf35d9-f6ea-4d39-a7b7-4daca32d38f6",
+  "collections": [
+    {
+      "name": "opportunities",
+      "schema": {
+        "columns": [
+          { "name": "company_name", "type": "STRING" },
+          { "name": "amount", "type": "LONG" },
+          { "name": "notes", "type": "STRING" },
+          { "name": "attachment", "type": "STRING" }
+        ]
+      },
+      "syncEnabled": true
+    }
+  ],
   "mapping": [
     {
       "dataSetId": "344e386d-2b28-4a30-ae7e-5fbfb0ccddad",

@@ -6,8 +6,6 @@
 //
 // For additional documentation on how you can query your data, please refer to
 // https://developer.domo.com/docs/dev-studio/dev-studio-data
-domo.get('/data/v2/leads?limit=10')
-    .then(function(leads){
-      console.log("leads", leads);
-    });
+domo.get('/data/v1/leads?fields=id,name,title,company_name,city,state&limit=10')
+    .then(data => drawTable(data, 'leads-table'));
 
