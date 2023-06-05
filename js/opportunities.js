@@ -56,6 +56,14 @@ function uploadFile(file) {
   return domo.post(`/domo/data-files/v1?name=${file.name}`, formData, options);
 }
 
+// This function deletes an opportunity document from a domo collection and then
+// refreshes the opportunity list.
+function deleteOpportunity(id) {
+  domo
+    .delete(`/domo/datastores/v1/collections/opportunities/documents/${id}`)
+    .then(getOpportunities);
+}
+
 // This function is the entry point for the code. It creates a new opportunity object
 (function () {
   const opportunity = {

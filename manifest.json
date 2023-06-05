@@ -5,6 +5,7 @@
     "width": 5,
     "height": 3
   },
+  "fullpage": true,
   "fileName": "manifest.json",
   "id": "afbb2cf0-a8a5-46cd-b998-35896d3e78ac",
   "proxyId": "efaf35d9-f6ea-4d39-a7b7-4daca32d38f6",
@@ -16,7 +17,8 @@
           { "name": "company_name", "type": "STRING" },
           { "name": "amount", "type": "LONG" },
           { "name": "notes", "type": "STRING" },
-          { "name": "attachment", "type": "STRING" }
+          { "name": "attachment", "type": "STRING" },
+          { "name": "attachment2", "type": "STRING" }
         ]
       },
       "syncEnabled": true
