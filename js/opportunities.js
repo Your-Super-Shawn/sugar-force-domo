@@ -17,9 +17,19 @@ function getOpportunities() {
         editable: true,
         action: updateOpportunity,
       };
-
       drawTable(rows, "opportunities-table", options);
     });
+
+  // Test -> User API
+  domo.get(`/domo/environment/v1`).then((env) => {
+    return domo
+      .get(`/domo/users/v1/${env.userId}?includeDetails=true`)
+      .then((user) => {
+        console.log("currentuser", user);
+      });
+  });
+  // Test -> Groups API
+  domo.get(`/domo/groups/v1/1334520569`).then((group) => console.log(group));
 }
 
 // This function updates an existing opportunity document in a Domo collection and then
